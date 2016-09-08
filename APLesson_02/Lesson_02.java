@@ -6,6 +6,6 @@ public class Lesson_02
 		int w = 5;
 		int recArea = l * w;
 		
-		System.out.println("The area of your rectangle is" + recArea)
+		System.out.println("The area of your rectangle is" + " " + recArea);
 	}
 }

@@ -6,7 +6,7 @@ public class EX_01
 	{
 		Scanner keyboard = new Scanner(System.in);
 		
-		System.out.println("What is your name?");
+		System.out.println("Hi, my name is RudeAI." + "\n" + "I'd like to ask you a few questions." + "\n" + "What is your name?");
 		
 		String name = keyboard.next();
 		
@@ -23,12 +23,15 @@ public class EX_01
 		
 		String music = keyboard.next();
 		
-		System.out.println("Why???? I heard that " + music + " music is used as torture in Los Angeles State prisons." + "\n" + "How many siblings do you have?");
+		System.out.println("Why???? I heard that " + music + " music is used as torture in Los Angeles prisons." + "\n" + "How many siblings do you have?");
 		
-		String sib = keyboard.nextInt();
+		int sib = keyboard.nextInt();
 		
-		System.out.println(ok);
+		System.out.println(sib + "? Well, I know who is NOT the favorite child!" + "\n" + "What do you want to be when you grow up?");
+	
+		String job = keyboard.next();
 		
+		System.out.println("They must be really desperate for " + job + "s if you expect to be hired!" + "\n" + "So, " + name + ", you're " + age + "..." + "\n" + "You like to " + funAct + " and listen to " + music + "..." + "\n" + "Good luck becoming a " + job + "." + "\n" + "I'm only kidding, " + name + ".");
 		
 	}
 

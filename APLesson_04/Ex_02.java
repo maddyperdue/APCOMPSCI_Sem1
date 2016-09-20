@@ -16,18 +16,27 @@ public class Ex_02
 		
 		System.out.println("Enter your title:");
 		String title = kb.next();
+		kb.nextLine();
 		
 		System.out.println("Enter the school site:");
-		String school = kb.next();
+		String school = kb.nextLine();
 		
 		System.out.println("Enter the school year:");
 		String year = kb.next();
+		kb.nextLine();
 		
 		System.out.println("What is your subject?");
-		String subject = kb.next();
+		String subject = kb.nextLine();
 		
+		System.out.println("************************************");
 		id.format(school, year);
 		id.format(first, last);
+		id.format(title, subject);
+		System.out.println("************************************");
+	}
 	
+	public void format(String info1, String info2)
+	{
+		System.out.printf("* %12s  %18s *\n", info1, info2);
 	}
 }

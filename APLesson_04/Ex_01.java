@@ -35,12 +35,15 @@ public class Ex_01
 		String total = "Total:";
 		double total1 = subtotal1 + tax1;
 		
+		System.out.println("\t<<<<<<Receipt>>>>>>");
 		receipt.format(item1, price1);
 		receipt.format(item2, price2);
 		receipt.format(item3, price3);
 		receipt.format(subtotal, subtotal1);
 		receipt.format(tax, tax1);
 		receipt.format(total, total1);
+		System.out.println("\n" + "______________________________");
+		System.out.println("Thank you for shopping with us!");
 	}
 	
 	public void format(String item, double price)

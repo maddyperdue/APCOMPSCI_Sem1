@@ -42,7 +42,7 @@ public class Ex_01
 		receipt.format(subtotal, subtotal1);
 		receipt.format(tax, tax1);
 		receipt.format(total, total1);
-		System.out.println("\n" + "______________________________");
+		System.out.println("\n" + "_______________________________");
 		System.out.println("Thank you for shopping with us!");
 	}
 	

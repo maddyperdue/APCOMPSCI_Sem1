@@ -13,12 +13,7 @@ public class Lab_02 {
 	
 //concatenation
 
-		String name = "Freddy Falcon";
-		String address = "3710 Del Mar Heights Rd";
-		String city = "San Diego";
-		int zip = 92130;
-		
-		System.out.println(name + "\n" + address + "\n" + city + "\n" + zip);
+		System.out.println("Freddy Falcon \n" + "3710 Del Mar Heights Rd \n" + "San Diego \n" + "92130");
 		
 //complex calculation
 

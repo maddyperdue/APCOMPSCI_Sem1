@@ -13,16 +13,16 @@ public class Diagram
 		int width = kb.nextInt();
 		
 		//method call(parameters)+
-		int perimeter = calcPerim(width, height);
+		int perimeter = calcPerim(height, width);
 		
 		//print statement
 		System.out.println("Your perimeter is " + perimeter + "ft.");
 	}
 	
-	public static int calcPerim(int w, int h)
+	public static int calcPerim(int h, int w)
 	{
 		//use parameters values in calculation
-		return 2*(w+h);
+		return 2*(h+w);
 	}
 	
 }

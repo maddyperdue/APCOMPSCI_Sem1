@@ -13,7 +13,7 @@ public class Lab_02 {
 	
 //concatenation
 
-		System.out.println("Freddy Falcon \n" + "3710 Del Mar Heights Rd \n" + "San Diego \n" + "92130");
+		System.out.println("Freddy Falcon \n" + "3710 Del Mar Heights Rd \n" + "San Diego, CA 92130");
 		
 //complex calculation
 

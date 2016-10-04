@@ -7,11 +7,13 @@ public class Rectangle
 	
 	public static void main(String[]args)
 	{
+		Scanner kb = new Scanner(System.in);
+		
 		System.out.println("Enter the length: ");
-		double l = nextDouble();
+		l = kb.nextDouble();
 		
 		System.out.println("Enter the width: ");
-		double w = nextDouble();
+		w = kb.nextDouble();
 		
 		calcPerim();
 		print();
@@ -24,6 +26,6 @@ public class Rectangle
 	
 	public static void print()
 	{
-		System.out.print("The perimeter of your rectangle is " + perimeter);
+		System.out.printf("The perimeter of your rectangle is %10.5f", perimeter);
 	}
 }

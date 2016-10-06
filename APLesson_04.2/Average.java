@@ -19,17 +19,17 @@ public class Average
 		System.out.println("Enter the third number: ");
 		num3 = kb.nextDouble();
 		
-		calcAvg();
+		average();
 		print();
 	}
 	
-	public static void calcAvg()
+	public static void average()
 	{
 		average = (num1 + num2 + num3)/3;
 	}
 	
 	public static void print()
 	{
-		System.out.printf("The average of " + num1 + ", " + num2 + ", and " + num3 + " is %10.5f", average);
+		System.out.printf("The average of " + num1 + ", " + num2 + ", and " + num3 + " is %.5f", average);
 	}
 }

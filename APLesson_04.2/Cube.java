@@ -11,17 +11,17 @@ public class Cube
 		System.out.println("Enter the length of the side: ");
 		side = kb.nextDouble();
 		
-		calcSurfaceArea();
+		calcSurf();
 		print();
 	}
 	
-	public static void calcSurfaceArea()
+	public static void calcSurf()
 	{
-		sa = 
+		sa = 6*side*side;
 	}
 	
 	public static void print()
 	{
-		System.out.printf("The surface area of a cube whose sides are " + side + " in length is %10.5f", sa);
+		System.out.printf("The surface area of a cube whose sides are " + side + " in length is %.5f", sa);
 	}
 }

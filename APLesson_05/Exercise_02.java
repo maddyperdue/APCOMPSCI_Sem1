@@ -44,7 +44,7 @@ public class Exercise_02
 		
 		format("Subtotal:", subtotal);
 		format("Discount:", discount);
-		format("Subtotal:", discountprice);
+		format("New subtotal:", discountprice);
 		format("Tax:", tax);
 		format("Total:", total);
 		

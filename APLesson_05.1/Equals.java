@@ -6,7 +6,7 @@ public class Equals
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Enter a word: ");
 		String word1 = kb.next();
-		String word2 = kb.next();
+		String word2 = "word";
 		
 		if(word1.equals(word2))
 			System.out.println("The words are equal!");

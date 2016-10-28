@@ -30,7 +30,7 @@ public class adventure
 				System.out.println("You are added to the long list of people murdered by the anonymous clown of the woods. You lose. ");
 			}
 			
-			else if(choice == 2)
+			else
 			{
 				System.out.println("The clown attempts to grab you as you begin your sprint, but you are able to escape. ");
 				System.out.println("You eventually find a road and see a car slowly approaching from the distance. ");
@@ -46,14 +46,14 @@ public class adventure
 					System.out.println("After a couple minutes of driving, you glance over at him. It is a clown. You have been kidnapped, and are never seen again. You lose. ");
 				}
 				
-				else if(choice == 2)
+				else
 				{
 					System.out.println("You eventually make it to the next town and are able to report the clown to the local police. You survived. ");
 				}
 			}
 		}
 	
-		if(choice ==2)
+		else if(choice == 2)
 		{
 			System.out.println("You make it to the stream, but discover you are not alone. ");
 			System.out.println("A momma bear and her cubs are fishing for a late night snack, but have not noticed you yet. ");
@@ -71,7 +71,7 @@ public class adventure
 				System.out.println("After weeks of searches by the police, you are presumed dead. You lose. ");
 			}
 			
-			else if(choice == 2)
+			else 
 			{
 				System.out.println("You grab the Klondike bar and open it. The bears hear the packaging and instantly run over to you. ");
 				System.out.println("They also grab Klondike bars for themselves and eat them whole. ");
@@ -96,7 +96,7 @@ public class adventure
 				System.out.println("You continue to wander for days, and eventually die of dehydration. You lose. ");
 			}
 			
-			else if(choice == 2)
+			else
 			{
 				System.out.println("In an hour, you wake up from your slumber. You look up to see a clown grinning at you from above. ");
 				System.out.println("You don't have time to react, and he knocks you out with his air pump. ");

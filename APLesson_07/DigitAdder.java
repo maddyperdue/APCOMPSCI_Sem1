@@ -1,23 +1,23 @@
 import java.util.Scanner;
-public class Lesson_07
+public class DigitAdder
 {
 	static int number;
-	static int digits = 0;
+	static int sum = 0;
 	
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter a number: ");
 		number = kb.nextInt();
-		countDigits();
-		System.out.println(number + " has " + digits + " digits.");
+		sumDigits();
+		System.out.println("The sum of the digits in " + number + " is " + sum);
 	}
-	public static void countDigits()
+	public static void sumDigits()
 	{
 		int num = number;
-		while(num > 0)
+		while(num>0)
 		{
-			digits += 1;
+			sum += num%10;
 			num /= 10;
 		}
 	}

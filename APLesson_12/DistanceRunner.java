@@ -33,7 +33,7 @@ public class DistanceRunner
 		System.out.println("Enter y4: ");
 		int y4 = kb.nextInt();
 	
-		object.setValues(x3,y3,x4,y4);
+		object.setValues(x3, y3, x4, y4);
 		
 		System.out.println("Distance = " + object.getDist());
 	}

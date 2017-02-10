@@ -1,7 +1,5 @@
 public class Car extends toy
 {
-	private String name;
-	private int count;
 	
 	public Car()
 	{

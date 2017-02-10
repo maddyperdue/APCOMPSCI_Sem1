@@ -1,4 +1,4 @@
-public class toy
+public abstract class toy
 {
 	private String name;
 	private int count;
@@ -11,7 +11,7 @@ public class toy
 	}
 	
 	//Constructor
-	public toy(String n, int c)
+	public toy(String n)
 	{
 		this.name = n;
 		this.count = 1;

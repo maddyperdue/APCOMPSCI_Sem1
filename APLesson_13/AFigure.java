@@ -1,18 +1,14 @@
 public class AFigure extends toy
 {
-	private String name;
-	private int count;
 	
 	public AFigure()
 	{
-		name = "";
-		count = 1;
+		super();
 	}
 	
-	public AFigure(String n, int c)
+	public AFigure(String n)
 	{
-		name = n;
-		count = c;
+		super(n);
 	}
 	
 	public String getType()

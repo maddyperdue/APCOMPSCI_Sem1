@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 public class toyStore
 {
+<<<<<<< HEAD
 	
 	private ArrayList<toy> toyList;
 	
@@ -46,10 +47,31 @@ public class toyStore
 				toylist.get(i).setCount(x);
 			}
 		}
+=======
+	public static void main(String[]args)
+	{
+		ArrayList<toy> toyList = new ArrayList<toy>();
+	}
+
+	public toyStore()
+	{
+		loadToys();
+	}
+	
+	public toyStore(ArrayList<toy>)
+	{
+		loadToys(toy);
+	}
+	
+	public String loadToys(String ts)
+	{
+		
+>>>>>>> origin/master
 	}
 	
 	public String getThatToy(String nm)
 	{
+<<<<<<< HEAD
 		for(int i = 0; i<toys.size(); i+=2)
 		{
 			if(toylist.get(i).getName().equals(nm))
@@ -59,16 +81,23 @@ public class toyStore
 			else
 				return "";
 		}
+=======
+		
+>>>>>>> origin/master
 	}
 	
 	public String getMostFrequentToy()
 	{
+<<<<<<< HEAD
 		String name;
 		int max = Integer.MIN_VALUE
 		for(int i = 0; i<toys.size(); i+=2)
 		{
 			if (max < count)
 		}
+=======
+		
+>>>>>>> origin/master
 	}
 	
 	public String getMostFrequentType()

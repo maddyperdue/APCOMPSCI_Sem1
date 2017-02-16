@@ -1,9 +1,10 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+
 public class toyStore
 {
-<<<<<<< HEAD
 	
-	private ArrayList<toy> toyList;
+	ArrayList<toy> toyList;
 	
 	//constructors
 	public toyStore()
@@ -11,110 +12,97 @@ public class toyStore
 		this.toyList = new ArrayList<toy>();
 	}
 	
-	public toyStore(String tl)
+	public toyStore(String ts)
 	{
-
-		loadToys(tl);
+		loadToys(ts);
 	}
 	
 	
 	public void loadToys(String ts)
 	{
-		int x = 1;
-		ArrayList<String>toys = new ArrayList<String>(Arrays.asList(ts.split(" ")));
+		
+		toyList = new ArrayList<toy>();
+		ArrayList<String>toys = new ArrayList<String>(Arrays.asList(ts.split(", ")));
 		for(int i = 0; i < toys.size(); i+=2)
 		{
 			String name = toys.get(i);
-			String type = toys.get(i + 2);
-			toy object = new toy(getThatToy(name));
-			if(getThatToy(name) == "")
+			toy t = getThatToy(name);
+			String type = toys.get(i + 1);
+			if(t == null)
 			{
 				if(type.equals("Car"))
 				{
-					Car a = new Car("corvette");
-					toyList.add(a);
+					toyList.add(new Car(name));
 				}
 				
-				else if(type.equals("AF"))
+				if(type.equals("AF"))
 				{
-					AFigure b = new AFigure("power ranger");
-					toyList.add(b);
+					toyList.add(new AFigure(name));
 				}
 			}
 			else
 			{
-				x++
-				toylist.get(i).setCount(x);
+				t.setCount(t.getCount()+1);
 			}
 		}
-=======
-	public static void main(String[]args)
-	{
-		ArrayList<toy> toyList = new ArrayList<toy>();
-	}
-
-	public toyStore()
-	{
-		loadToys();
 	}
 	
-	public toyStore(ArrayList<toy>)
+	public toy getThatToy(String nm)
 	{
-		loadToys(toy);
-	}
-	
-	public String loadToys(String ts)
-	{
-		
->>>>>>> origin/master
-	}
-	
-	public String getThatToy(String nm)
-	{
-<<<<<<< HEAD
-		for(int i = 0; i<toys.size(); i+=2)
+		for(toy t : toyList)
 		{
-			if(toylist.get(i).getName().equals(nm))
+			if(t.getName().equals(nm))
 			{
-				return toylist.get(i).getName();
+				return t;
 			}
-			else
-				return "";
 		}
-=======
-		
->>>>>>> origin/master
+		return null;
 	}
 	
 	public String getMostFrequentToy()
 	{
-<<<<<<< HEAD
-		String name;
-		int max = Integer.MIN_VALUE
-		for(int i = 0; i<toys.size(); i+=2)
+		String name = "";
+		int max = Integer.MIN_VALUE;
+		for(toy t : toyList)
 		{
-			if (max < count)
+			if (max < t.getCount())
+			{
+				max = t.getCount();
+				name = t.getName();
+			}
 		}
-=======
-		
->>>>>>> origin/master
+		return name;
+
 	}
 	
 	public String getMostFrequentType()
 	{
-		new int cars = 0;
-		new int figures = 0;
+		int cars = 0;
+		int figures = 0;
 		
-		for //each toy in toylist
-		if(car
+		for(toy t : toyList)
+		{
+			if(t.getType().equals("Car"))
 			cars++;
-		if(AF
+			if(t.getType().equals("Action Figure"))
 			figures++;
+		}
+		
+		if(cars>figures)
+			return "Cars";
+		if(figures>cars)
+			return "Action Figures";
+		else
+			return "Equal amounts of action figures and cars!";
 	}
 	
 	public String toString()
 	{
-		return toyList;
+		String result = "";
+		for(toy t : toyList)
+		{
+			result += "" + t;
+		}
+		return "\nToys in stock...\n" + result + "\n";
 	}
 }
-// same it's going

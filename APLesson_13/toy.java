@@ -20,23 +20,23 @@ public abstract class toy
 	//Accessors
 	public String getName()
 	{
-		return this.name;
+		return name;
 	}
 	
 	public int getCount()
 	{
-		return this.count;
+		return count;
 	}
 	
 	//Modifiers
 	public void setName(String n)
 	{
-		this.name = n;
+		name = n;
 	}
 	
 	public void setCount(int c)
 	{
-		this.count = c;
+		count = c;
 	}
 	
 	//Abstract Method
@@ -44,6 +44,6 @@ public abstract class toy
 	
 	public String toString()
 	{
-		return this.name + " " + this.count;
+		return "[" + name + "]" + "[" + count + "], ";
 	}
 }

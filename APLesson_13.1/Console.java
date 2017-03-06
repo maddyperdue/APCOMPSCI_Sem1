@@ -1,14 +1,22 @@
-public class Console extends GameSystem
+public abstract class Console extends GameSystem
 {
-	public abstract getController()
+	
+	public Console()
 	{
-		return controller;
+		super();
 	}
+	
+	public Console(String x)
+	{
+		super(x);
+	}
+	
+	public abstract String getController();
 	
 	public String toString()
 	{
-		return "\nPlatform: " + platform +
-				"\nSerial #: " + serialNo +
-				"\nController: " + controller;
+		return "\nPlatform: " + super.getPlatform() +
+				"\nSerial #: " + super.getserialNo() +
+				"\nController: " + getController(); 
 	}
 }

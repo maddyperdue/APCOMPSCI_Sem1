@@ -1,14 +1,14 @@
 import java.util.Random;
-public class GMC implements Location
+public class GMC_1 implements Car
 {
 	double xLoc, yLoc;
 	
-	public GMC()
+	public GMC_1()
 	{
 		xLoc = yLoc = 0;
 	}
 	
-	public GMC(double x, double y)
+	public GMC_1(double x, double y)
 	{
 		xLoc = x;
 		yLoc = y;

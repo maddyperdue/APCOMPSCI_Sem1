@@ -7,7 +7,7 @@ public class Toyota implements Location
 	public Toyota()
 	{
 		super();
-		location = new location[2];
+		location = new double[2];
 	}
 	
 	public Toyota(String loc)
@@ -16,11 +16,21 @@ public class Toyota implements Location
 		yLoc = Double.parseDouble(loc.substring(3));
 	}
 	
-	public double getID()
+	public int getID()
 	{
 		Random rand = new Random();
 		return rand.nextInt(900000) + 100000;
 	}
 	
-	public double move()
+	public void move(double x, double y)
+	{
+		xLoc = x;
+		yLoc = y;
+	}
+	
+	public double[] getLoc()
+	{
+		double[] location = {xLoc, yLoc};
+		return location;
+	}
 }

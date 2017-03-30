@@ -1,17 +1,19 @@
 import java.util.Random;
-public class GMC implements Location
+public class Honda_1 implements Car
 {
-	double xLoc, yLoc;
+	private double[] location;
+	private double xLoc, yLoc;
 	
-	public GMC()
+	public Honda_1()
 	{
-		xLoc = yLoc = 0;
+		xLoc = 0;
+		xLoc = 0;
 	}
 	
-	public GMC(double x, double y)
+	public Honda_1(double[] location)
 	{
-		xLoc = x;
-		yLoc = y;
+		xLoc = location[0];
+		yLoc = location[1];
 	}
 	
 	public int getID()
@@ -31,5 +33,4 @@ public class GMC implements Location
 		double[] location = {xLoc, yLoc};
 		return location;
 	}
-	
 }

@@ -1,25 +1,27 @@
 import java.util.Random;
-public class Toyota_1 implements Car
+public class Toyota extends Car
 {
 	private double[] location;
 	private double xLoc, yLoc;
+	private int ID;
 	
-	public Toyota_1()
+	public Toyota()
 	{
 		super();
 		location = new double[2];
+		ID = (int)(Math.random()*1000000+1);
 	}
 	
-	public Toyota_1(String loc)
+	public Toyota(String loc)
 	{
 		xLoc = Double.parseDouble(loc.substring(0,1));
 		yLoc = Double.parseDouble(loc.substring(3));
+		ID = (int)(Math.random()*1000000+1);
 	}
 	
 	public int getID()
 	{
-		Random rand = new Random();
-		return rand.nextInt(900000) + 100000;
+		return ID;
 	}
 	
 	public void move(double x, double y)

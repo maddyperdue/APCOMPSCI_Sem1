@@ -1,23 +1,25 @@
 import java.util.Random;
-public class GMC_1 implements Car
+public class GMC extends Car
 {
 	double xLoc, yLoc;
+	private int ID;
 	
-	public GMC_1()
+	public GMC()
 	{
 		xLoc = yLoc = 0;
+		ID = (int)(Math.random()*1000000+1);
 	}
 	
-	public GMC_1(double x, double y)
+	public GMC(double x, double y)
 	{
 		xLoc = x;
 		yLoc = y;
+		ID = (int)(Math.random()*1000000+1);
 	}
 	
 	public int getID()
 	{
-		Random rand = new Random();
-		return rand.nextInt(900000) + 100000;
+		return ID;
 	}
 	
 	public void move(double x, double y)
